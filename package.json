@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Ian Emsens's Portfolio",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ian-Emsens/Ian-Emsens.github.io.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Developer",
+    "JavaScript",
+    "Simple"
+  ],
+  "author": "Ian Emsens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ian-Emsens/Ian-Emsens.github.io/issues"
+  },
+  "homepage": "https://github.com/Ian-Emsens/Ian-Emsens.github.io#readme",
+  "dependencies": {
+    "baffle": "^0.3.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
