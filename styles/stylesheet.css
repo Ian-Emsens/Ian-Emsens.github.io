@@ -1,0 +1,38 @@
+body {
+    background-color: #fefefe;
+    display: relative;
+}
+
+h1, p {
+    color: #333;
+    text-shadow: #efefef -0.05em 0.05em;
+    text-align: center;
+    word-break: break-all;
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+small {
+    opacity: 0.5;
+    font-size: 35%;
+}
+
+small::before {
+    content: '\A';
+    white-space: pre;
+}
+
+.centraliser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

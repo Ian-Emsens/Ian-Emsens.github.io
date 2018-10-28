@@ -9,11 +9,21 @@
         <meta name="description" content="Ian Emsens's Portfolio">
         <meta name="keywords" content="Portfolio, Developer, JavaScript, Simple">
         <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Open+Sans" rel="stylesheet">
     </head>
     <body>
-        <h1 class="baffle">Ian Emsens</h1>
-        <p class="baffle">Lorem ipsum dolor sit amet</p>
+        <div class="centraliser">
+            <h1 class="baffle">Ian Emsens</h1>
+            <p>
+                <span class="baffle">Coming soon</span>
+                <!--
+                    Why am I using such weird markup to apply my baffle? because I'm using <small> and the ::before selector
+                    Baffle removes both of these and just parses everything to plaintext, probably using innerText if I'd have to guess
+                -->
+                <small><span class="baffle">Probably...</span></small>
+            </p>
+        </div>
 
         <script src="main.js"></script>
     </body>
