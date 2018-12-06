@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "concurrently -n webpack,sass \"webpack\" \"sass ./styles/sass/main.scss:./styles/stylesheet.css --watch --no-source-map --no-stop-on-error\""
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/Ian-Emsens/Ian-Emsens.github.io#readme",
   "dependencies": {
-    "baffle": "^0.3.6"
+    "baffle": "^0.3.6",
+    "concurrently": "^4.1.0"
   },
   "devDependencies": {
     "webpack": "^4.23.1",

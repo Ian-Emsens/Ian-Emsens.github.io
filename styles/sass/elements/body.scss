@@ -1,0 +1,25 @@
+body {
+  background-color: #030609;
+  color: white;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+
+    &:after {
+        content: "";
+        background-image: url('../images/background-scotland-overlook.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+
+        opacity: 0.375;
+
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        position: absolute;
+        z-index: -1;   
+    }
+}
