@@ -11,19 +11,23 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
         <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Numans|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <div class="centraliser">
-            <h1 class="baffle">Ian Emsens</h1>
-            <p>
-                <span class="baffle">Coming soon</span>
-                <!--
-                    Why am I using such weird markup to apply my baffle? because I'm using <small> and the ::before selector
-                    Baffle removes both of these and just parses everything to plaintext, probably using innerText if I'd have to guess
-                -->
-                <small><span class="baffle">Probably...</span></small>
-            </p>
-        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li class="about-me">Me,</li>
+                    <li class="projects">My work</li>
+                    <li class="contact">and you</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Ian Emsens</h1>
+        </section>
 
         <script src="main.js"></script>
     </body>
