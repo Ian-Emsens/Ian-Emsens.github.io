@@ -1,5 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Numans", serif;
+  word-spacing: 0.134em;
+  letter-spacing: 0.267em;
+  font-weight: normal;
 }
 
 body {
@@ -29,7 +32,7 @@ body:after {
 }
 
 .hero {
-  padding: 6rem 0;
+  padding: 9.6rem 0 2.4rem 0;
   text-align: center;
 }
 
@@ -37,25 +40,24 @@ body:after {
   font-family: "Numans";
   font-variant: small-caps;
   text-transform: lowercase;
-  word-spacing: 0.15em;
-  letter-spacing: 0.05em;
-  font-size: 7.2rem;
+  font-size: 3.6rem;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   height: 6rem;
 }
 
 nav {
-  padding: 2.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  padding: 1.15rem;
   font-size: 1.4rem;
   line-height: 1;
+  box-sizing: border-box;
 }
-
-nav > ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,17 +69,24 @@ nav > ul {
   letter-spacing: 0.05em;
   white-space: nowrap;
 }
-
-nav > ul > li {
+nav ul li {
   display: inline-block;
   margin: 0;
-  padding: 0;
-  transition: padding 0.2s ease-in-out 0.05s, color 0.2s ease-in-out 0.05s, opacity 0.2s ease-in-out 0.05s;
+  padding: 1.15rem 0;
+  transition: padding 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   position: relative;
   opacity: 0.5;
+  overflow: hidden;
 }
-
-nav > ul > li::after {
+nav ul li:hover {
+  cursor: pointer;
+  color: transparent;
+  opacity: 1;
+}
+nav ul li:hover:after {
+  color: white;
+}
+nav ul li:after {
   color: transparent;
   text-align: center;
   white-space: nowrap;
@@ -85,38 +94,26 @@ nav > ul > li::after {
   top: 0;
   left: 0;
   right: 0;
-}
-
-header .about-me::after {
-  content: "about me";
-}
-
-header .projects::after {
-  content: "what I do";
-}
-
-header .contact::after {
-  content: "contact me";
-}
-
-nav > ul > li:hover {
-  color: transparent;
-  opacity: 1;
-  cursor: pointer;
+  padding: 1.15rem 0;
 }
 
 header .about-me:hover {
-  padding: 0 1.875em;
+  padding: 1.15rem 1.875em;
+}
+header .about-me:after {
+  content: "about me";
 }
 
 header .projects:hover {
-  padding: 0 0.625em;
+  padding: 1.15rem 0.625em;
+}
+header .projects:after {
+  content: "what I do";
 }
 
 header .contact:hover {
-  padding: 0 1.125em;
+  padding: 1.15rem 1.125em;
 }
-
-nav > ul > li:hover::after {
-  color: white;
+header .contact:after {
+  content: "contact me";
 }
