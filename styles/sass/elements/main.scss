@@ -1,36 +1,89 @@
-$small-article-size: (100 / 2) + 0%;
-$medium-article-size: (100 / 3) + 0%;
-$regular-article-size: (100 / 4) + 0%;
-$large-article-size: (100 / 5) + 0%;
-
 main {
+    @include make-row();
+    margin: initial;
+    padding-bottom: $spacing;
 
     article {
         color: #333;
-        float: left;
-        width: 100%;
         background-color: white;
-        padding: $spacing / 2;
+        padding: $spacing;
         box-sizing: border-box;
 
-        // 2 Col
-        @media screen and (min-width: $small-start-breakpoint) {
-            @include article-columns(2);
+        &.single {
+            @include make-col-ready();
+
+            @include media-breakpoint-up(xs) { @include make-col(60); }
+            @include media-breakpoint-up(sm) { @include make-col(30); }
+            @include media-breakpoint-up(md) { @include make-col(20); }
+            @include media-breakpoint-up(lg) { @include make-col(15); }
+            @include media-breakpoint-up(xl) { @include make-col(12); }
         }
 
-        // 3 Col
-        @media screen and (min-width: $medium-start-breakpoint) {
-            @include article-columns(3);
+        &.double {
+            @include make-col-ready();
+
+            @include media-breakpoint-up(xs) { @include make-col(60); }
+            @include media-breakpoint-up(sm) { @include make-col(60); }
+            @include media-breakpoint-up(md) { @include make-col(40); }
+            @include media-breakpoint-up(lg) { @include make-col(30); }
+            @include media-breakpoint-up(xl) { @include make-col(24); }
         }
 
-        // 4 Col
-        @media screen and (min-width: $regular-start-breakpoint) {
-            @include article-columns(4);
+        &.triple {
+            @include make-col-ready();
+
+            @include media-breakpoint-up(xs) { @include make-col(60); }
+            @include media-breakpoint-up(sm) { @include make-col(60); }
+            @include media-breakpoint-up(md) { @include make-col(60); }
+            @include media-breakpoint-up(lg) { @include make-col(45); }
+            @include media-breakpoint-up(xl) { @include make-col(36); }
         }
 
-        // 5 Col
-        @media screen and (min-width: $large-start-breakpoint) {
-            @include article-columns(5);
+        &.quadruple {
+            @include make-col-ready();
+
+            @include media-breakpoint-up(xs) { @include make-col(60); }
+            @include media-breakpoint-up(sm) { @include make-col(60); }
+            @include media-breakpoint-up(md) { @include make-col(60); }
+            @include media-breakpoint-up(lg) { @include make-col(60); }
+            @include media-breakpoint-up(xl) { @include make-col(48); }
+        }
+
+        &.pentuple {
+            @include make-col-ready();
+
+            @include media-breakpoint-up(xs) { @include make-col(60); }
+            @include media-breakpoint-up(sm) { @include make-col(60); }
+            @include media-breakpoint-up(md) { @include make-col(60); }
+            @include media-breakpoint-up(lg) { @include make-col(60); }
+            @include media-breakpoint-up(xl) { @include make-col(60); }
+        }
+
+        &.is-image {
+            background-color: hotpink
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            word-spacing: initial;
+            letter-spacing: initial;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        p {
+            line-height: 1.6667;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            height: 0px;
+            position: absolute;
+            top: -$spacing * 1;
         }
     }
 }

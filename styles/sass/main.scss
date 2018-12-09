@@ -3,8 +3,33 @@
 @import './utilities/variables.scss';
 @import './utilities/mixins.scss';
 
+// Bootstrap overrides
+
+$grid-columns: 60;
+
+// Why do I have 60 columns you ask?
+
+// I wanted to achieve a grid where the only real effect of scaling up and down is just
+// the addition of another column, I start at 1 and move to 5. Which means I need a number
+// that is divideable by 1, 2, 3, 4 AND 5
+
+// Because the bootstrap grid is only missing the ability to be divided in 5,
+// I decided to just multiply its initial number (12) by 5
+
+$grid-gutter-width: $spacing * 2;
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+
 @import './elements/typo.scss';
 
+@import './elements/backgrounds.scss';
 @import './elements/body.scss';
 @import './elements/hero.scss';
 @import './elements/main.scss';
