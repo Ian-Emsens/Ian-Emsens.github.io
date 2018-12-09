@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "concurrently -n webpack,sass \"webpack\" \"sass ./styles/sass/main.scss:./styles/stylesheet.css --watch --no-source-map --no-stop-on-error\""
+    "build": "concurrently -n webpack,sass \"webpack\" \"sass styles/sass/main.scss:styles/stylesheet.css --watch --no-source-map --no-stop-on-error\""
   },
   "repository": {
     "type": "git",

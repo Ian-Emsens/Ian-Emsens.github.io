@@ -1,17 +1,21 @@
 body {
-  background-color: #030609;
   color: white;
   font-size: 62.5%;
   margin: 0;
-  padding: 0;
+  padding: $spacing / 2;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background-image: url('../images/background-scotland-overlook.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  position: relative;
 
     &:after {
         content: "";
-        background-image: url('../images/background-scotland-overlook.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-
+        background-color: #030609;
         opacity: 0.375;
 
         top: 0;

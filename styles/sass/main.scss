@@ -1,10 +1,12 @@
 // Blank lines indicate load-order groups, everything else is alphabetically sorted
 
 @import './utilities/variables.scss';
+@import './utilities/mixins.scss';
 
 @import './elements/typo.scss';
 
 @import './elements/body.scss';
 @import './elements/hero.scss';
+@import './elements/main.scss';
 @import './elements/nav.scss';
 

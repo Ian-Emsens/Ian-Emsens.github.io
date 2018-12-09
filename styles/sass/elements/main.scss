@@ -1,0 +1,36 @@
+$small-article-size: (100 / 2) + 0%;
+$medium-article-size: (100 / 3) + 0%;
+$regular-article-size: (100 / 4) + 0%;
+$large-article-size: (100 / 5) + 0%;
+
+main {
+
+    article {
+        color: #333;
+        float: left;
+        width: 100%;
+        background-color: white;
+        padding: $spacing / 2;
+        box-sizing: border-box;
+
+        // 2 Col
+        @media screen and (min-width: $small-start-breakpoint) {
+            @include article-columns(2);
+        }
+
+        // 3 Col
+        @media screen and (min-width: $medium-start-breakpoint) {
+            @include article-columns(3);
+        }
+
+        // 4 Col
+        @media screen and (min-width: $regular-start-breakpoint) {
+            @include article-columns(4);
+        }
+
+        // 5 Col
+        @media screen and (min-width: $large-start-breakpoint) {
+            @include article-columns(5);
+        }
+    }
+}
