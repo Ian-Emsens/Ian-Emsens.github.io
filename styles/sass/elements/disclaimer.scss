@@ -1,0 +1,19 @@
+.disclaimer {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+    text-align: center;
+
+    padding: $spacing;
+
+    p {
+        margin-bottom: $spacing / 2;
+        line-height: 1;
+
+        text-transform: lowercase;
+        font-variant: small-caps;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

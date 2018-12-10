@@ -3,84 +3,55 @@ main {
     margin: initial;
     padding-bottom: $spacing;
 
+    hr {
+        flex-basis: 100%;
+        overflow: hidden;
+        margin: ($spacing * 3) 0;
+        border: 0;
+    }
+
     article {
         color: #333;
         background-color: white;
         padding: $spacing;
         box-sizing: border-box;
 
-        &.single {
-            @include make-col-ready();
-
-            @include media-breakpoint-up(xs) { @include make-col(60); }
-            @include media-breakpoint-up(sm) { @include make-col(30); }
-            @include media-breakpoint-up(md) { @include make-col(20); }
-            @include media-breakpoint-up(lg) { @include make-col(15); }
-            @include media-breakpoint-up(xl) { @include make-col(12); }
+        &.transparent {
+            color: white;
+            background-color: transparent;
         }
 
-        &.double {
-            @include make-col-ready();
-
-            @include media-breakpoint-up(xs) { @include make-col(60); }
-            @include media-breakpoint-up(sm) { @include make-col(60); }
-            @include media-breakpoint-up(md) { @include make-col(40); }
-            @include media-breakpoint-up(lg) { @include make-col(30); }
-            @include media-breakpoint-up(xl) { @include make-col(24); }
-        }
-
-        &.triple {
-            @include make-col-ready();
-
-            @include media-breakpoint-up(xs) { @include make-col(60); }
-            @include media-breakpoint-up(sm) { @include make-col(60); }
-            @include media-breakpoint-up(md) { @include make-col(60); }
-            @include media-breakpoint-up(lg) { @include make-col(45); }
-            @include media-breakpoint-up(xl) { @include make-col(36); }
-        }
-
-        &.quadruple {
-            @include make-col-ready();
-
-            @include media-breakpoint-up(xs) { @include make-col(60); }
-            @include media-breakpoint-up(sm) { @include make-col(60); }
-            @include media-breakpoint-up(md) { @include make-col(60); }
-            @include media-breakpoint-up(lg) { @include make-col(60); }
-            @include media-breakpoint-up(xl) { @include make-col(48); }
-        }
-
-        &.pentuple {
-            @include make-col-ready();
-
-            @include media-breakpoint-up(xs) { @include make-col(60); }
-            @include media-breakpoint-up(sm) { @include make-col(60); }
-            @include media-breakpoint-up(md) { @include make-col(60); }
-            @include media-breakpoint-up(lg) { @include make-col(60); }
-            @include media-breakpoint-up(xl) { @include make-col(60); }
-        }
-
-        &.is-image {
-            background-color: hotpink
+        &:not(.transparent) {
+            h1, h2, h3, h4, h5, h6 {
+                word-spacing: initial;
+                letter-spacing: initial;
+            }
         }
 
         h1, h2, h3, h4, h5, h6 {
-            word-spacing: initial;
-            letter-spacing: initial;
+            text-transform: lowercase;
+            font-variant: small-caps;
 
-            &:first-child {
-                margin-top: 0;
-            }
+            text-align: center;
+
+            line-height: 1.1;
+
+            margin-bottom: $spacing;
         }
 
         p {
             line-height: 1.6667;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
 
         a {
+            &.button {
+                border: 1px solid;
+                padding: $spacing/2 $spacing;
+                text-decoration: none;
+            }
+        }
+
+        .anchor {
             height: 0px;
             position: absolute;
             top: -$spacing * 1;

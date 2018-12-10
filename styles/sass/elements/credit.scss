@@ -1,0 +1,32 @@
+.credit {
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: $spacing / 2;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: auto;
+    max-width: 100%;
+
+    text-align: right;
+    
+    @include media-breakpoint-up(md) {
+        opacity: 0.25;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}

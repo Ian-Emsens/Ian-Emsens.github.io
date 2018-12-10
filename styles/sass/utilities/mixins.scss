@@ -1,3 +1,29 @@
+@mixin article-background($name) {
+    $url: "../images/background-article-#{$name}.jpg";
+
+    .bg-#{$name} {
+        background-image: url($url);
+        @content;
+    }
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: ($height / $width) * 100%;
+    }
+    // > .content {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    // }
+  }
+
 // This was an attempt at creating an intelligent free-flowing grid
 // discontinued because the hassle of creating equal height responsive columns
 // with a float-based approach was not worth it versus the ease of switching to bootstrap's

@@ -18,6 +18,11 @@ $grid-columns: 60;
 
 $grid-gutter-width: $spacing * 2;
 
+$link-color:                inherit;
+$link-decoration:           underline;
+$link-hover-color:          inherit;
+$link-hover-decoration:     none;
+
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
@@ -26,12 +31,19 @@ $grid-gutter-width: $spacing * 2;
 // Optional
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities/display";
 
 @import './elements/typo.scss';
 
+@import './elements/articles.scss';
 @import './elements/backgrounds.scss';
 @import './elements/body.scss';
+@import './elements/contact.scss';
+@import './elements/credit.scss';
+@import './elements/disclaimer.scss';
+@import './elements/footer.scss';
 @import './elements/hero.scss';
 @import './elements/main.scss';
 @import './elements/nav.scss';
+@import './elements/projects.scss';
 
