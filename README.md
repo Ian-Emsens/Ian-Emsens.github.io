@@ -5,8 +5,8 @@ https://ian-emsens.github.io/
 // TODO
 
 ## Dependencies
-- Node (8.11.1)
-- NPM (6.4.1)
+- Node (v10.15.1)
+- NPM (v6.14.6)
 - SASS (1.15.1)
 
 ## Development
