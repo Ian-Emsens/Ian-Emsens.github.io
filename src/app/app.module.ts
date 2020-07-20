@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ViewerComponent } from './components/viewer/viewer.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { ViewerComponent } from './components/viewer/viewer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxJsonViewerModule
+    NgxJsonViewerModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
