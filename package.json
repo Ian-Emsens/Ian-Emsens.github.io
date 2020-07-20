@@ -1,0 +1,23 @@
+{
+  "name": "ian-emsens.github.io",
+  "version": "2.0.0",
+  "description": "Ian Emsens's portfolio",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/cli": "^10.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ian-Emsens/Ian-Emsens.github.io.git"
+  },
+  "author": "Ian Emsens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ian-Emsens/Ian-Emsens.github.io/issues"
+  },
+  "homepage": "https://github.com/Ian-Emsens/Ian-Emsens.github.io#readme"
+}
