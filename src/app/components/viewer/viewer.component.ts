@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewerComponent implements OnInit {
 
-  constructor() { }
+  public portfolio: any;
+
+  constructor() {
+    this.portfolio = {
+      foo: 'bar',
+    }
+  }
 
   ngOnInit(): void {
   }
