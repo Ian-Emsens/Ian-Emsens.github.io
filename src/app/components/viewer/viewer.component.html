@@ -1,1 +1,5 @@
-<ngx-json-viewer [json]="portfolio" [expanded]="false"></ngx-json-viewer>
+<ngx-json-viewer
+  *ngIf="state$ !== undefined"
+  [json]="state$ | async"
+  [expanded]="false"
+></ngx-json-viewer>
