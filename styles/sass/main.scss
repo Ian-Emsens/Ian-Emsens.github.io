@@ -31,6 +31,7 @@ $link-hover-decoration:     none;
 // Optional
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/utilities/display";
 
 @import './elements/typo.scss';
@@ -46,4 +47,6 @@ $link-hover-decoration:     none;
 @import './elements/main.scss';
 @import './elements/nav.scss';
 @import './elements/projects.scss';
+
+@import './utilities/centraliser.scss';
 
