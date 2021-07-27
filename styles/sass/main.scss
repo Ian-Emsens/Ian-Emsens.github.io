@@ -5,16 +5,10 @@
 
 // Bootstrap overrides
 
-$grid-columns: 60;
+$headings-font-family: 'Merriweather', serif;
+$headings-font-weight: 500;
 
-// Why do I have 60 columns you ask?
-
-// I wanted to achieve a grid where the only real effect of scaling up and down is just
-// the addition of another column, I start at 1 and move to 5. Which means I need a number
-// that is divideable by 1, 2, 3, 4 AND 5
-
-// Because the bootstrap grid is only missing the ability to be divided in 5,
-// I decided to just multiply its initial number (12) by 5
+$display1-weight: $headings-font-weight;
 
 $grid-gutter-width: $spacing * 2;
 
@@ -23,30 +17,45 @@ $link-decoration:           underline;
 $link-hover-color:          inherit;
 $link-hover-decoration:     none;
 
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$dark: rgb(20, 20, 25);
+
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+// Bootstrap extensions
+
+$font-family-base: 'Lato', $font-family-sans-serif;
+
+$theme-colors: map-merge(
+  (
+    "white": $white
+  ),
+  $theme-colors
+);
+
 // Optional
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/utilities/display";
 
 @import './elements/typo.scss';
 
-@import './elements/articles.scss';
-@import './elements/backgrounds.scss';
+@import './elements/article.scss';
 @import './elements/body.scss';
-@import './elements/contact.scss';
-@import './elements/credit.scss';
-@import './elements/disclaimer.scss';
+@import './elements/experience.scss';
 @import './elements/footer.scss';
-@import './elements/hero.scss';
+@import './elements/header.scss';
 @import './elements/main.scss';
-@import './elements/nav.scss';
-@import './elements/projects.scss';
+@import './elements/sup.scss';
 
 @import './utilities/centraliser.scss';
 

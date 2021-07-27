@@ -1,21 +1,8 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: $headings-font;
-    font-weight: normal;
-}
-
-p {
-    font-size: 1.4rem;
-}
-
-@for $i from 1 through 6 {
-    $step: 0.2rem;
-    
-    h#{$i}{
-        font-size: 3.2rem - ($step * $i);
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&Merriweather:wght@300&family=Quicksand:wght@300&display=swap');
 
 body, html {
-    font-family: $body-font;
-    font-size: 62.5%;
+    *::selection {
+        color: $dark;
+        background: $white;
+    }
 }

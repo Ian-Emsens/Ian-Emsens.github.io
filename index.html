@@ -4,28 +4,129 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
         <title>Ian Emsens</title>
+
         <meta name="author" content="Ian Emsens">
         <meta name="description" content="Ian Emsens's Portfolio">
         <meta name="keywords" content="Portfolio, Developer, JavaScript, Simple">
         <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
         <link rel="stylesheet" href="styles/stylesheet.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600|Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Numans|Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
+
     <body>
-        <div class="centralise text-center">
-            <h1>
-                Work in progress...
-            </h1>
+        <header class="container">
+            <h1 class="display-1">Ian Emsens</h1>
 
-            <p>
-                <small style="font-size: 10px">Also, fuck you Tom.</small>
-            </p>
-        </div>
+            <p>Developer</p>
+        </header>
 
-        
+        <main class="container">
+            <article class="introduction">
+                <h2>Introduction</h2>
+
+                <p>Hi, I'm Ian Emsens, <span id="age"></span> year old developer from Belgium. I build websites, applications and technical integrations with a focus on end-user interaction and ease-of-use. In this case, you (the user), are interested in learning what I can do and who I am. Or you're a friend (Tom) looking for some banter.</p>
+            </article>
+            
+            <article class="experience">
+                <h2>Experience<!-- <span class="material-icons" id="experience__order">swap_vert</span>--></h2>
+
+                <ul class="list-unstyled" id="experience__list">
+                    <li class="experience__item">
+                        <h3>
+                            <a href="https://designosource.be/"
+                                rel="external nofollow noopener noreferrer"
+                                referrerpolicy="no-referrer" 
+                                target="_blank">
+                            Designosource</a>
+    
+                            <small><sup>(2015 - 2016)</sup></small>
+                        </h3>
+
+                        <p>A practice enterprise run by Thomas More for third-year students. During this time, students are able to work as a small, independent agency guided by professors. The whole technical and administrative process is performed by students, from offer to go-live.</p>
+
+                        <p>This is where I got my earliest professional experience, creating websites and stand-alone applications in Symfony, Drupal, AngularJS and Laravel.</p>
+                    </li>
+
+                    <li class="experience__item">
+                        <h3>
+                            <a
+                                href="https://flowpilots.com/"
+                                rel="external nofollow noopener noreferrer"
+                                referrerpolicy="no-referrer"
+                                target="_blank">
+                            Flow Pilots</a>
+
+                            <small><sup>(2016 - 2019)</sup></small>
+                        </h3>
+
+                        <p>After a succesful internship, I decided to stick around at Flow Pilots, an Antwerp-based mobile app developer. With a primary focus on building native mobile applications, I got a lot of experience working with strongly-typed languages, object-oriented and reactive programming. This is also where I picked up my Angular (rc3 - v8) and TypeScript experience and passion.</p>
+
+                        <p>Hybrid (web) apps were shunned but not out of the question, the most challenging project I picked up was the Antwerp Voting App. This app is still used (to my knowledge) during Antwerp city councils. It uses redux and websockets to replace the old on-site hardware and provides Antwerp with a more flexible way for officials to vote.</p>
+                    </li>
+                    
+                    <li class="experience__item">
+                        <h3>
+                            <a
+                                href="https://www.springbokagency.com/"
+                                rel="external nofollow noopener noreferrer"
+                                referrerpolicy="no-referrer"
+                                target="_blank">
+                            Springbok Agency</a>
+
+                            <small><sup>(2019 - <span id="currenYear--experience"></span>)</sup></small>
+                        </h3>
+
+                        <p>At Springbok Agency, I chose to diversify. The Mechelen-based agency allowed me to gain experience in DevOps (GitHub, Envoyer, Azure DevOps), AWS, Azure, Stencil, Vue.js and many more full-stack technologies. My role at Springbok was extremely fluid, between assisting in project management and analyzing SAP-based back-end integrations I spent my time building projects from scratch, maintaining existing applications and guiding colleagues.</p>
+
+                        <p>The culmination of these responsibilities is the website of Bridgestone's European & Middle-Eastern branch. Built entirely using a corporate-level headless back-end and web components, this huge project is very technologically diverse. Working with the team got me acquainted with a lot of new technologies like GraphQL and JSX.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="skills">
+                <h2>Skills</h2>
+
+                <ul class="list-unstyled row" id="skills__list">
+                    <li class="col-12 col-sm-6 col-md-4">HTML</li>
+                    <li class="col-12 col-sm-6 col-md-4">CSS / SASS / LESS</li>
+                    <li class="col-12 col-sm-6 col-md-4">JavaScript / TypeScript</li>
+                    <li class="col-12 col-sm-6 col-md-4">Angular / Vue.js</li>
+                    <li class="col-12 col-sm-6 col-md-4">Ionic / Stencil / JSX</li>
+                    <li class="col-12 col-sm-6 col-md-4">Jira / Asana / Trello</li>
+                    <li class="col-12 col-sm-6 col-md-4">Github / Bitbucket / Git CLI</li>
+                    <li class="col-12 col-sm-6 col-md-4">Redux / Observables</li>
+                    <li class="col-12 col-sm-6 col-md-4">Websockets / GraphQL </li>
+                    <li class="col-12 col-sm-6 col-md-4">Mobile-first development</li>
+                    <li class="col-12 col-sm-6 col-md-4">Laravel / Symfony</li>
+                    <li class="col-12 col-sm-6 col-md-4">WordPress / Drupal</li>
+                    <li class="col-12 col-sm-6 col-md-4">ASP.NET / .NET core</li>
+                    <li class="col-12 col-sm-6 col-md-4">Adobe Creative Suite</li>
+                    <li class="col-12 col-sm-6 col-md-4">Sketch / Abstract / Invision</li>
+                    <li class="col-12 col-sm-6 col-md-4">Object-oriented programming</li>
+                    <li class="col-12 col-sm-6 col-md-4">Swagger / OpenAPI</li>
+                    <li class="col-12 col-sm-6 col-md-4">AWS / Azure</li>
+                </ul>
+            </article>
+
+            <article class="certificates">
+                <h2>Certificates</h2>
+
+                <p></p>
+            </article>
+
+            <article class="contact">
+                <h2>Contact</h2>
+
+                <p></p>
+            </article>
+        </main>
+
+        <footer class="container">
+            Inspired by <a href="http://motherfuckingwebsite.com/" rel="external nofollow noopener noreferrer" referrerpolicy="no-referrer" target="_blank">a motherfucking website</a>.
+        </footer>
 
         <script src="main.js"></script>
     </body>
