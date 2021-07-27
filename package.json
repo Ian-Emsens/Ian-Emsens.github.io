@@ -26,7 +26,8 @@
   "dependencies": {
     "baffle": "^0.3.6",
     "bootstrap": "^4.5.0",
-    "concurrently": "^6.2.0"
+    "concurrently": "^6.2.0",
+    "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
     "webpack": "^4.43.0",
