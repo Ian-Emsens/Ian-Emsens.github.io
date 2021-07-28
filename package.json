@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "2.0.3",
   "description": "Ian Emsens's Portfolio",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ian-Emsens/Ian-Emsens.github.io.git"
+    "url": "https://github.com/Ian-Emsens/Ian-Emsens.github.io.git"
   },
   "keywords": [
     "Portfolio",
