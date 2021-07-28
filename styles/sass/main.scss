@@ -1,27 +1,19 @@
 // Blank lines indicate load-order groups, everything else is alphabetically sorted
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Josefin+Sans:wght@500&display=swap');
 
 @import './utilities/variables.scss';
 @import './utilities/mixins.scss';
 
 // Bootstrap overrides
 
-$headings-font-family: 'Merriweather', serif;
-$headings-font-weight: 500;
-
-$display1-weight: $headings-font-weight;
+$body-bg: $dark;
 
 $grid-gutter-width: $spacing * 2;
 
-$link-color:                inherit;
-$link-decoration:           underline;
-$link-hover-color:          inherit;
-$link-hover-decoration:     none;
-
-$border-radius: 0;
-$border-radius-lg: 0;
-$border-radius-sm: 0;
-
-$dark: rgb(20, 20, 25);
+$link-color: inherit;
+$link-decoration: underline;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
 
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
@@ -31,31 +23,33 @@ $dark: rgb(20, 20, 25);
 // Bootstrap extensions
 
 $font-family-base: 'Lato', $font-family-sans-serif;
+$headings-font-family: 'Josefin Sans', $font-family-monospace;
+$headings-font-weight: 500;
+
+$display1-weight: $headings-font-weight;
 
 $theme-colors: map-merge(
   (
-    "white": $white
+    "aws": $aws
   ),
   $theme-colors
 );
 
+@import './utilities/centraliser.scss';
+
 // Optional
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/grid";
-@import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/type";
-@import "../../node_modules/bootstrap/scss/utilities";
-@import "../../node_modules/bootstrap/scss/utilities/display";
+@import "../../node_modules/bootstrap/scss/utilities/text";
 
 @import './elements/typo.scss';
 
 @import './elements/article.scss';
 @import './elements/body.scss';
+@import './elements/certificates.scss';
 @import './elements/experience.scss';
 @import './elements/footer.scss';
 @import './elements/header.scss';
 @import './elements/main.scss';
 @import './elements/sup.scss';
-
-@import './utilities/centraliser.scss';
-

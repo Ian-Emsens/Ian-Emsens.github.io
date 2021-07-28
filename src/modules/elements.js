@@ -4,12 +4,8 @@ console.info('[Elements] Init');
 
 export const elements = {
     age: document.getElementById('age'),
-    currentYear: document.getElementById('currenYear--experience'),
-    skills: document.getElementById('skills__list'),
-    experience: {
-        button: document.getElementById('experience__order'),
-        list: document.getElementById('experience__list')
-    }
+    year: document.getElementById('year'),
+    skills: document.getElementById('skills'),
 };
 
 // Prevents warning in webpack

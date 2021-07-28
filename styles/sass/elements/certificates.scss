@@ -1,0 +1,25 @@
+.certificates {
+    .material-icons {
+        font-size: 1em;
+        transform: translateY(0.125em);
+    }
+
+    .text-aws {
+        position: relative;
+
+        &:after {
+            content: '';
+            @include centralise();
+            width: 0.5em;
+            height: 0.5em;
+            background-color: white;
+            z-index: -1;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        [class*="col"]:not(:first-child) {
+            margin-top: $spacing / 4;
+        }
+    }
+}

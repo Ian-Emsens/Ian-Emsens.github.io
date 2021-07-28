@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"elements\", function() { return elements; });\nconsole.info('[Elements] Init');\r\n\r\n// A central collection of the elements I want adjusted on the page.\r\n\r\nconst elements = {\r\n    age: document.getElementById('age'),\r\n    currentYear: document.getElementById('currenYear--experience'),\r\n    skills: document.getElementById('skills__list'),\r\n    experience: {\r\n        button: document.getElementById('experience__order'),\r\n        list: document.getElementById('experience__list')\r\n    }\r\n};\r\n\r\n// Prevents warning in webpack\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (elements);\n\n//# sourceURL=webpack:///./src/modules/elements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"elements\", function() { return elements; });\nconsole.info('[Elements] Init');\r\n\r\n// A central collection of the elements I want adjusted on the page.\r\n\r\nconst elements = {\r\n    age: document.getElementById('age'),\r\n    year: document.getElementById('year'),\r\n    skills: document.getElementById('skills'),\r\n};\r\n\r\n// Prevents warning in webpack\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (elements);\n\n//# sourceURL=webpack:///./src/modules/elements.js?");
 
 /***/ }),
 
@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"init\", function() { return init; });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/modules/elements.js\");\n\r\n\r\nfunction init() {\r\n    const now = new Date();\r\n\r\n    _elements__WEBPACK_IMPORTED_MODULE_0__[\"default\"].age.innerHTML = new Date(now - new Date('Dec 03 1995')).getFullYear() - 1970;\r\n    _elements__WEBPACK_IMPORTED_MODULE_0__[\"default\"].currentYear.innerHTML = now.getFullYear();\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n    init\r\n});\n\n//# sourceURL=webpack:///./src/modules/time.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"init\", function() { return init; });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/modules/elements.js\");\n\r\n\r\nfunction init() {\r\n    const now = new Date();\r\n\r\n    _elements__WEBPACK_IMPORTED_MODULE_0__[\"default\"].age.innerHTML = new Date(now - new Date('Dec 03 1995')).getFullYear() - 1970;\r\n    _elements__WEBPACK_IMPORTED_MODULE_0__[\"default\"].year.innerHTML = now.getFullYear();\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n    init\r\n});\n\n//# sourceURL=webpack:///./src/modules/time.js?");
 
 /***/ })
 

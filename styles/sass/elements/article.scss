@@ -1,3 +1,7 @@
 article {
     margin-top: $spacing;
+
+    @include media-breakpoint-up(md) {
+        margin-top: $spacing * 2;
+    }
 }

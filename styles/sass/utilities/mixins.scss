@@ -9,84 +9,11 @@
 
 @mixin aspect-ratio($width, $height) {
     position: relative;
+
     &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: ($height / $width) * 100%;
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
     }
-    // > .content {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    // }
-  }
-
-// This was an attempt at creating an intelligent free-flowing grid
-// discontinued because the hassle of creating equal height responsive columns
-// with a float-based approach was not worth it versus the ease of switching to bootstrap's
-// flex grid
-
-// @mixin article-spacers($column-count, $base-column-width) {
-//     @each $i in $column-count {
-//         &.l-#{$i} {
-//             margin-left: ($base-column-width * $i) + 0%;
-//         }
-
-//         &.r-#{$i} {
-//             margin-right: ($base-column-width * $i) + 0%;
-//         }
-//     }
-// }
-
-// 
-// @mixin article-columns($amount) {
-//     $column-width: 100 / $amount;
-
-//     width: $column-width + 0%;
-
-//     @for $i from 1 through $amount {
-//         // ignore single-column for spacers and sizers
-//         @if $i > 1 {
-//             // add spacer classes to create gaps
-//             @include article-spacers($i - 1, $column-width);
-
-//             &.x#{$i} {
-//                 // add sizer classes for multiple column widths
-//                 $sizer-width: $column-width * $i;
-//                 width: $sizer-width + 0%;
-
-//                 // check all the spacers for each sizer
-//                 @for $j from 1 through $amount {
-//                     $spacer-width: $column-width * $j;
-//                     @if ($spacer-width < 100) {
-//                         $sum: $sizer-width + $spacer-width;
-//                         // if the sum of the sizer and the spacer exceeds 100
-//                         @if ($sum > 100) {
-//                             // calculate the remaining space that sizer allows
-//                             $remaining-space: 100 - $sizer-width;
-
-//                             @if ($remaining-space == 0) {
-//                                 // reduce the spacer to the remaining size
-//                                 @include article-spacers($j, 0);
-//                             }
-
-//                             @if ($remaining-space > 0) {
-//                                 // reduce the spacer to the remaining size
-//                                 @include article-spacers($j, $remaining-space / $j);
-//                             }
-//                         }
-
-//                         // If the sum is less than or equals 100, it was probably overwritten somewhere, add them specifically
-//                         @if ($sum < 100 or $sum == 100) {
-//                             @include article-spacers($j, $column-width);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//     }
-// }
+}
