@@ -1865,6 +1865,10 @@ footer {
 header {
   margin-top: 9.6rem;
 }
+header .display-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 main {
   margin-top: 6.4rem;
