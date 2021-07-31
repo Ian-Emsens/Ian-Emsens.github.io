@@ -1891,6 +1891,12 @@ header {
 header .display-1 {
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 3.9rem;
+}
+@media (min-width: 576px) {
+  header .display-1 {
+    font-size: 6rem;
+  }
 }
 
 main {
