@@ -1,7 +1,7 @@
 # In Progress
 
 ## Gurf's Mouth (status: active, T- 10 days)
-The dwarf's mouth is sealed by sovereign glue. A faerie at the black market requires rare moonstone and giantswood sap to undo.
+The dwarf's mouth is sealed by sovereign glue. A faerie at the black market requires rare Moonstone Ore and Giantwoods Sap to undo.
 Having arrived at The Amberwoods we found the trees but were stopped by Hammerfist the giant. We negotiated **some** vials in exchange for completing Hammerfist's Request.
 
 ## Gulakkr's Armor (status: forgotten, T- 9 days)
@@ -21,7 +21,7 @@ Two artificers have offered their services, they have made a bad(ass) dragon dil
 An undead revenant and a flaming skull have been plaguing a nearby port town.
 
 ## Moonstone Smithing (status: in progress)
-Loch Nosh's dwarven blacksmith buys moonstone ore.
+Loch Nosh's dwarven blacksmith buys Moonstone Ore.
 
 ## Ziggs's Juice (status: in progress)
 Ziggs wants Giantwoods Sap in exchange for one cursed item from their wares.
