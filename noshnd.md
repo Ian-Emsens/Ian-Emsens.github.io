@@ -1,6 +1,6 @@
 # In Progress
 
-#### Gurf's Mouth (status: lowest priority, T- 9 days)
+## Gurf's Mouth (status: lowest priority, T- 9 days)
 The dwarf's mouth is sealed by sovereign glue. A faerie at the black market requires rare moonstone and giant's wood sap to undo.
 
 ## Gulakkr's Armor (status: lowest priority, T- 9 days)
