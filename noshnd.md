@@ -1,7 +1,8 @@
 # In Progress
 
 ## Gurf's Mouth (status: lowest priority, T- 9 days)
-The dwarf's mouth is sealed by sovereign glue. A faerie at the black market requires rare moonstone and giant's wood sap to undo.
+The dwarf's mouth is sealed by sovereign glue. A faerie at the black market requires rare moonstone and giantswood sap to undo.
+Having arrived at The Amberwoods we found the trees but were stopped by Hammerfist the giant.
 
 ## Gulakkr's Armor (status: lowest priority, T- 9 days)
 The orc's armor appears bound to them, impeding their rest and general welfare.
@@ -36,6 +37,13 @@ There's a mysterious tower wizard in Loch Nosh.
 
 ## The Council's Request (status: ignored)
 Loch Nosh's council asked us to do something about the recent undead spotted near the town.
+
+## Hammerfist's Request
+Hammerfist has asked you to keep the forest quiet by freeing the villagers from slavers to the north.
+
+## Riddletech Spire
+While tracking the slavers we stumbled across a tower filled with riddles and mechanical contraptions.
+We survived the trial of strength on the second floor and collected its rewards.
 
 # Failed
 
