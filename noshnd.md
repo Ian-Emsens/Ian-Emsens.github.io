@@ -41,9 +41,14 @@ Loch Nosh's council asked us to do something about the recent undead spotted nea
 ## Hammerfist's Request (status: active)
 Hammerfist has asked you to keep the forest quiet by freeing the villagers from slavers to the north.
 
-## Riddletech Spire (status: active)
-While tracking the slavers we stumbled across a tower filled with riddles and mechanical contraptions.
-We survived the trial of strength on the second floor and collected its rewards.
+## Warptoken Cache (status: rumoured)
+In the Amberwood Lizardman village, near the three-pointed mushroom.
+
+## Chriit's Master (status: rumoured)
+Chriit the cowardly rat is evidently controlled by a wizard.
+
+## The Slave Mines (status: active)
+The dwarf and the tieflings hatched a plan to free the mines by sending the dwarf in as a slave and having them free the others while they work to assassinate the leader.
 
 # Failed
 
@@ -60,4 +65,5 @@ We survived the trial of strength on the second floor and collected its rewards.
 - The Crazed King (destroyed Harold, killed the zombiefied king)
 - Kobra's Request (documents delivered)
 - The Magic Cupboard (crystal sword and green crystal acquired from owl man after scorpion killed)
-- The Roving Kobolds (Bonefang and her smith will move to the castle, the kobolds will work the mines and deposit their treasure in her hoard, the smith's dog follows Cadburus) 
+- The Roving Kobolds (Bonefang and her smith will move to the castle, the kobolds will work the mines and deposit their treasure in her hoard, the smith's dog follows Cadburus)
+- Riddletech Spire (survived the trial of strength on the second floor and collected its rewards)
